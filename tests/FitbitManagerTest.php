@@ -7,9 +7,9 @@ namespace Namelivia\Fitbit\Tests\Laravel;
 use GrahamCampbell\TestBench\AbstractTestCase as AbstractTestBenchTestCase;
 use Illuminate\Contracts\Config\Repository;
 use Mockery;
+use Namelivia\Fitbit\Api\Api;
 use Namelivia\Fitbit\Laravel\FitbitFactory;
 use Namelivia\Fitbit\Laravel\FitbitManager;
-use Namelivia\Fitbit\Api\Api;
 
 /**
  * This is the Fitbit manager test class.
