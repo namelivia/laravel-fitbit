@@ -60,7 +60,7 @@ Here you can see an example of just how simple this package is to use. Out of th
 // You can alias this in config/app.php.
 use Namelivia\Fitbit\Laravel\Facades\Fitbit;
 
-Fitbit::food()
+Fitbit::activities()->activity()->getLifetimeStats();
 // We're done here - how easy was that, it just works!
 ```
 
