@@ -1,4 +1,4 @@
-# Laravel Fitbit
+# laravel-fitbit [![tag](https://img.shields.io/github/tag/namelivia/laravel-fitbit.svg)](https://github.com/namelivia/laravel-fitbit/releases) [![Build Status](https://travis-ci.org/namelivia/laravel-fitbit.svg?branch=master)](https://travis-ci.org/namelivia/laravel-fitbit) [![codecov](https://codecov.io/gh/namelivia/laravel-fitbit/branch/master/graph/badge.svg)](https://codecov.io/gh/namelivia/laravel-fitbit) [![StyleCI](https://github.styleci.io/repos/199821858/shield?branch=master)](https://github.styleci.io/repos/199821858)
 
 ## Installation
 
