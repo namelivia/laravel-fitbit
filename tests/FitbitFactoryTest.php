@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Namelivia\Fitbit\Tests\Laravel;
 
-use Namelivia\Fitbit\Laravel\FitbitFactory;
 use Namelivia\Fitbit\Api\Api;
+use Namelivia\Fitbit\Laravel\FitbitFactory;
 
 /**
  * This is the Fitbit factory test class.
