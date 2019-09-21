@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace Namelivia\Fitbit\Laravel;
 
+use Illuminate\Support\Arr;
 use InvalidArgumentException;
 use Namelivia\Fitbit\Api\Api;
+use Namelivia\Fitbit\Api\Fitbit;
 
 /**
  * This is the Fitbit factory class.
@@ -19,9 +21,9 @@ class FitbitFactory
      *
      * @param array $config
      *
-     * @return \Namelivia\Fitbit\Api\Api
+     * @return \Namelivia\Fitbit\Api\Fitbit
      */
-    public function make(array $config): Api
+    public function make(array $config): Fitbit
     {
         $config = $this->getConfig($config);
 
@@ -52,7 +54,7 @@ class FitbitFactory
             }
         }
 
-        return array_only($config, $keys);
+        return Arr::only($config, $keys);
     }
 
     /**
@@ -60,15 +62,17 @@ class FitbitFactory
      *
      * @param string[] $auth
      *
-     * @return \Namelivia\Fitbit\Api\Api
+     * @return \Namelivia\Fitbit\Api\Fitbit
      */
-    protected function getClient(array $auth): Api
+    protected function getClient(array $auth): Fitbit
     {
-        return new Api(
+			return new Fitbit(
+				new Api(
             $auth['client_id'],
             $auth['client_secret'],
             $auth['redirect_url'],
             $auth['token_path']
+        	)
         );
     }
 }

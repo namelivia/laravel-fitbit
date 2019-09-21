@@ -8,7 +8,7 @@ use Illuminate\Contracts\Container\Container;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Lumen\Application as LumenApplication;
-use Namelivia\Fitbit\Api\Api;
+use Namelivia\Fitbit\Api\Fitbit;
 
 /**
  * This is the Fitbit service provider class.
@@ -101,7 +101,7 @@ class FitbitServiceProvider extends ServiceProvider
             return $manager->connection();
         });
 
-        $this->app->alias('fitbit.connection', Api::class);
+        $this->app->alias('fitbit.connection', Fitbit::class);
     }
 
     /**

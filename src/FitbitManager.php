@@ -6,7 +6,7 @@ namespace Namelivia\Fitbit\Laravel;
 
 use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;
-use Namelivia\Fitbit\Api\Api;
+use Namelivia\Fitbit\Api\Fitbit;
 
 /**
  * This is the Fitbit manager class.
@@ -42,9 +42,9 @@ class FitbitManager extends AbstractManager
      *
      * @param array $config
      *
-     * @return Namelivia\Fitbit\Api\Api
+     * @return Namelivia\Fitbit\Api\Fitbit
      */
-    protected function createConnection(array $config): Api
+    protected function createConnection(array $config): Fitbit
     {
         return $this->factory->make($config);
     }
