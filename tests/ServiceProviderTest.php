@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Namelivia\Fitbit\Tests\Laravel;
 
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
-use Namelivia\Fitbit\Api\Api;
+use Namelivia\Fitbit\Api\Fitbit;
 use Namelivia\Fitbit\Laravel\FitbitFactory;
 use Namelivia\Fitbit\Laravel\FitbitManager;
 
@@ -30,7 +30,7 @@ class ServiceProviderTest extends AbstractTestCase
 
     public function testBindings()
     {
-        $this->assertIsInjectable(Api::class);
+        $this->assertIsInjectable(Fitbit::class);
 
         $original = $this->app['fitbit.connection'];
         $this->app['fitbit']->reconnect();

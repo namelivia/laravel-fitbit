@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Namelivia\Fitbit\Tests\Laravel;
 
-use Namelivia\Fitbit\Api\Api;
+use Namelivia\Fitbit\Api\Fitbit;
 use Namelivia\Fitbit\Laravel\FitbitFactory;
 
 /**
@@ -25,7 +25,7 @@ class FitbitFactoryTest extends AbstractTestCase
             'token_path' => 'your-token-path',
         ]);
 
-        $this->assertInstanceOf(Api::class, $return);
+        $this->assertInstanceOf(Fitbit::class, $return);
     }
 
     /**

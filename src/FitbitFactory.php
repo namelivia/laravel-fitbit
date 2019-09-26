@@ -6,7 +6,6 @@ namespace Namelivia\Fitbit\Laravel;
 
 use Illuminate\Support\Arr;
 use InvalidArgumentException;
-use Namelivia\Fitbit\Api\Api;
 use Namelivia\Fitbit\Api\Fitbit;
 
 /**
@@ -67,12 +66,10 @@ class FitbitFactory
     protected function getClient(array $auth): Fitbit
     {
 			return new Fitbit(
-				new Api(
-            $auth['client_id'],
-            $auth['client_secret'],
-            $auth['redirect_url'],
-            $auth['token_path']
-        	)
+					$auth['client_id'],
+					$auth['client_secret'],
+					$auth['redirect_url'],
+					$auth['token_path']
         );
     }
 }
