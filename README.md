@@ -115,3 +115,7 @@ This is package is a Laravel wrapper of [fitbit-http-php](https://github.com/nam
 ## License
 
 [MIT](LICENSE)
+
+## Local development
+
+This project comes with a `docker-compose.yml` file so if you use Docker and docker-compose you can develop without installing anything on your local environment. Just run `docker-compose up --build` for the first time to setup the container and launch the tests. PHPUnit is configured as the entrypoint so just run `docker-compose up` everytime you want the tests to execute on the Dockerized PHP development container.
