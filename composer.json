@@ -14,7 +14,7 @@
         "php": "^7.1",
         "illuminate/contracts": "5.5.*|5.6.*|5.7.*|5.8.*|6.*|7.*",
         "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*|6.*|7.*",
-        "namelivia/fitbit-http-php": "^0.0.1",
+        "namelivia/fitbit-http-php": "0.0.10",
         "graham-campbell/manager": "3.*|4.*"
     },
     "require-dev": {

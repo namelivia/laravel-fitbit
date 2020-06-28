@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2734edbfdf99b3917af968fc946f26a0",
+    "content-hash": "964a0175b1eb427838226a0448897514",
     "packages": [
         {
             "name": "brick/math",
@@ -1072,16 +1072,16 @@
         },
         {
             "name": "namelivia/fitbit-http-php",
-            "version": "0.0.7",
+            "version": "0.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/namelivia/fitbit-http-php.git",
-                "reference": "1f853d056c54cb4568d934dfb043456b47afc279"
+                "reference": "c0a6c939eaa1ba9354f3fb9e855b548ff24da7d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/namelivia/fitbit-http-php/zipball/1f853d056c54cb4568d934dfb043456b47afc279",
-                "reference": "1f853d056c54cb4568d934dfb043456b47afc279",
+                "url": "https://api.github.com/repos/namelivia/fitbit-http-php/zipball/c0a6c939eaa1ba9354f3fb9e855b548ff24da7d1",
+                "reference": "c0a6c939eaa1ba9354f3fb9e855b548ff24da7d1",
                 "shasum": ""
             },
             "require": {
@@ -1117,7 +1117,7 @@
                 "fitbit",
                 "sdk"
             ],
-            "time": "2019-08-21T18:21:03+00:00"
+            "time": "2020-06-28T17:43:45+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -4492,20 +4492,20 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.9.5",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "b2c28789e80a97badd14145fda39b545d83ca3ef"
+                "reference": "5796d127b0c4ff505b77455148ea9d5269d99758"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/b2c28789e80a97badd14145fda39b545d83ca3ef",
-                "reference": "b2c28789e80a97badd14145fda39b545d83ca3ef",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/5796d127b0c4ff505b77455148ea9d5269d99758",
+                "reference": "5796d127b0c4ff505b77455148ea9d5269d99758",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1"
+                "php": "^7.1 || ^8.0"
             },
             "replace": {
                 "myclabs/deep-copy": "self.version"
@@ -4536,7 +4536,13 @@
                 "object",
                 "object graph"
             ],
-            "time": "2020-01-17T21:11:47+00:00"
+            "funding": [
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/myclabs/deep-copy",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-28T07:02:41+00:00"
         },
         {
             "name": "nikic/php-parser",
