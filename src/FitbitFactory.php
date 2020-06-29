@@ -6,9 +6,9 @@ namespace Namelivia\Fitbit\Laravel;
 
 use Illuminate\Support\Arr;
 use InvalidArgumentException;
+use kamermans\OAuth2\Persistence\NullTokenPersistence;
 use Namelivia\Fitbit\Api\Fitbit;
 use Namelivia\Fitbit\ServiceProvider;
-use kamermans\OAuth2\Persistence\NullTokenPersistence;
 
 /**
  * This is the Fitbit factory class.
@@ -45,7 +45,7 @@ class FitbitFactory
         $keys = [
             'client_id',
             'client_secret',
-            'redirect_url'
+            'redirect_url',
         ];
 
         foreach ($keys as $key) {
@@ -67,6 +67,7 @@ class FitbitFactory
     protected function getClient(array $auth): Fitbit
     {
         $tokenPersistence = new NullTokenPersistence();
+
         return (new ServiceProvider())->build(
             $tokenPersistence,
             $auth['client_id'],
