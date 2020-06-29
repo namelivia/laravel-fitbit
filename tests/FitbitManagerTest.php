@@ -7,7 +7,7 @@ namespace Namelivia\Fitbit\Tests\Laravel;
 use GrahamCampbell\TestBench\AbstractTestCase as AbstractTestBenchTestCase;
 use Illuminate\Contracts\Config\Repository;
 use Mockery;
-use Namelivia\Fitbit\Api\Api;
+use Namelivia\Fitbit\Api\Fitbit;
 use Namelivia\Fitbit\Laravel\FitbitFactory;
 use Namelivia\Fitbit\Laravel\FitbitManager;
 
@@ -31,7 +31,7 @@ class FitbitManagerTest extends AbstractTestBenchTestCase
 
         $return = $manager->connection();
 
-        $this->assertInstanceOf(Api::class, $return);
+        $this->assertInstanceOf(Fitbit::class, $return);
 
         $this->assertArrayHasKey('fitbit', $manager->getConnections());
     }
@@ -49,7 +49,7 @@ class FitbitManagerTest extends AbstractTestBenchTestCase
         $config['name'] = 'fitbit';
 
         $manager->getFactory()->shouldReceive('make')->once()
-            ->with($config)->andReturn(Mockery::mock(Api::class));
+            ->with($config)->andReturn(Mockery::mock(Fitbit::class));
 
         return $manager;
     }
