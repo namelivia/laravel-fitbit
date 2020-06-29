@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Namelivia\Fitbit\Tests\Laravel;
 
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
-use Namelivia\Fitbit\ServiceProvider;
 use Namelivia\Fitbit\Laravel\FitbitFactory;
 use Namelivia\Fitbit\Laravel\FitbitManager;
+use Namelivia\Fitbit\ServiceProvider;
 
 /**
  * This is the service provider test class.
