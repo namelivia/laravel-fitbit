@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Namelivia\Fitbit\Tests\Laravel;
 
-use Namelivia\Fitbit\Api\Api;
+use Namelivia\Fitbit\Api\Fitbit;
 use Namelivia\Fitbit\Laravel\FitbitFactory;
 
 /**
@@ -22,10 +22,9 @@ class FitbitFactoryTest extends AbstractTestCase
             'client_id' => 'your-client-id',
             'client_secret' => 'your-client-secret',
             'redirect_url' => 'your-redirect-url',
-            'token_path' => 'your-token-path',
         ]);
 
-        $this->assertInstanceOf(Api::class, $return);
+        $this->assertInstanceOf(Fitbit::class, $return);
     }
 
     /**
@@ -38,7 +37,6 @@ class FitbitFactoryTest extends AbstractTestCase
         $factory->make([
             'client_secret' => 'your-client-secret',
             'redirect_url' => 'your-redirect-url',
-            'token_path' => 'your-token-path',
         ]);
     }
 
@@ -52,7 +50,6 @@ class FitbitFactoryTest extends AbstractTestCase
         $return = $factory->make([
             'client_id' => 'your-client-id',
             'redirect_url' => 'your-redirect-url',
-            'token_path' => 'your-token-path',
         ]);
     }
 
@@ -66,21 +63,6 @@ class FitbitFactoryTest extends AbstractTestCase
         $return = $factory->make([
             'client_id' => 'your-client-id',
             'client_secret' => 'your-client-secret',
-            'token_path' => 'your-token-path',
-        ]);
-    }
-
-    /**
-     * @expectedException \InvalidArgumentException
-     */
-    public function testMakeWithoutTokenPath()
-    {
-        $factory = $this->getFitbitFactory();
-
-        $return = $factory->make([
-            'client_id' => 'your-client-id',
-            'client_secret' => 'your-client-secret',
-            'redirect_url' => 'your-redirect-url',
         ]);
     }
 

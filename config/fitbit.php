@@ -33,15 +33,13 @@ return [
         'main' => [
             'client_id' => env('FITBIT_CLIENT_ID', 'your-client-id'),
             'client_secret' => env('FITBIT_CLIENT_SECRET', 'your-client-secret'),
-            'redirect_url' => env('FITBIT_REDIRECT_URL', 'your-redirect-url'),
-            'token_path' => env('FITBIT_TOKEN_PATH', 'your-token-path'),
+            'redirect_url' => env('FITBIT_REDIRECT_URL', 'your-redirect-url')
         ],
 
         'alternative' => [
             'client_id' => 'your-client-id',
             'client_secret' => 'your-client-secret',
-            'redirect_url' => 'your-redirect-url',
-            'token_path' => 'your-token-path',
+            'redirect_url' => 'your-redirect-url'
         ],
 
     ],

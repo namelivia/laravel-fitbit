@@ -42,7 +42,7 @@ class FitbitManager extends AbstractManager
      *
      * @param array $config
      *
-     * @return Namelivia\Fitbit\Api\Fitbit
+     * @return \Namelivia\Fitbit\Api\Fitbit
      */
     protected function createConnection(array $config): Fitbit
     {
