@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     image: php:7.4
     container_name: laravel_fitbit_app
-    entrypoint: "vendor/bin/phpunit"
+    entrypoint: "composer update"
     tty: false
     working_dir: /usr/src/app
     volumes:
