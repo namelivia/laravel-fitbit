@@ -27,39 +27,33 @@ class FitbitFactoryTest extends AbstractTestCase
         $this->assertInstanceOf(Fitbit::class, $return);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function testMakeWithoutClientId()
     {
         $factory = $this->getFitbitFactory();
 
+        $this->expectException(\InvalidArgumentException::class);
         $factory->make([
             'client_secret' => 'your-client-secret',
             'redirect_url' => 'your-redirect-url',
         ]);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function testMakeWithoutClientSecret()
     {
         $factory = $this->getFitbitFactory();
 
+        $this->expectException(\InvalidArgumentException::class);
         $return = $factory->make([
             'client_id' => 'your-client-id',
             'redirect_url' => 'your-redirect-url',
         ]);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function testMakeWithoutRedirectUrl()
     {
         $factory = $this->getFitbitFactory();
 
+        $this->expectException(\InvalidArgumentException::class);
         $return = $factory->make([
             'client_id' => 'your-client-id',
             'client_secret' => 'your-client-secret',
