@@ -5206,16 +5206,16 @@
         },
         {
             "name": "graham-campbell/analyzer",
-            "version": "v3.0.4",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Analyzer.git",
-                "reference": "797a92a2d0c0f8a55712021393391bffdc8daace"
+                "reference": "841b3ef9fc1f18c18cd373f606a8a3667a34dc95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Analyzer/zipball/797a92a2d0c0f8a55712021393391bffdc8daace",
-                "reference": "797a92a2d0c0f8a55712021393391bffdc8daace",
+                "url": "https://api.github.com/repos/GrahamCampbell/Analyzer/zipball/841b3ef9fc1f18c18cd373f606a8a3667a34dc95",
+                "reference": "841b3ef9fc1f18c18cd373f606a8a3667a34dc95",
                 "shasum": ""
             },
             "require": {
@@ -5244,7 +5244,7 @@
             "authors": [
                 {
                     "name": "Graham Campbell",
-                    "email": "graham@alt-three.com"
+                    "email": "hello@gjcampbell.co.uk"
                 }
             ],
             "description": "Checks if referenced classes really exist.",
@@ -5258,7 +5258,7 @@
             ],
             "support": {
                 "issues": "https://github.com/GrahamCampbell/Analyzer/issues",
-                "source": "https://github.com/GrahamCampbell/Analyzer/tree/v3.0.4"
+                "source": "https://github.com/GrahamCampbell/Analyzer/tree/v3.0.5"
             },
             "funding": [
                 {
@@ -5270,7 +5270,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-07T15:56:32+00:00"
+            "time": "2021-08-28T23:02:02+00:00"
         },
         {
             "name": "graham-campbell/testbench",
