@@ -5019,16 +5019,16 @@
         },
         {
             "name": "graham-campbell/analyzer",
-            "version": "v3.0.6",
+            "version": "v3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Analyzer.git",
-                "reference": "ca9a7090287d2a925a28da5038fbeab1772e7f49"
+                "reference": "46add0fa79a64fe24b2dc16d7c2298a56b9b3522"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Analyzer/zipball/ca9a7090287d2a925a28da5038fbeab1772e7f49",
-                "reference": "ca9a7090287d2a925a28da5038fbeab1772e7f49",
+                "url": "https://api.github.com/repos/GrahamCampbell/Analyzer/zipball/46add0fa79a64fe24b2dc16d7c2298a56b9b3522",
+                "reference": "46add0fa79a64fe24b2dc16d7c2298a56b9b3522",
                 "shasum": ""
             },
             "require": {
@@ -5057,7 +5057,8 @@
             "authors": [
                 {
                     "name": "Graham Campbell",
-                    "email": "hello@gjcampbell.co.uk"
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
                 }
             ],
             "description": "Checks if referenced classes really exist.",
@@ -5071,7 +5072,7 @@
             ],
             "support": {
                 "issues": "https://github.com/GrahamCampbell/Analyzer/issues",
-                "source": "https://github.com/GrahamCampbell/Analyzer/tree/v3.0.6"
+                "source": "https://github.com/GrahamCampbell/Analyzer/tree/v3.0.7"
             },
             "funding": [
                 {
@@ -5083,7 +5084,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-17T19:47:56+00:00"
+            "time": "2021-11-21T20:47:12+00:00"
         },
         {
             "name": "graham-campbell/testbench",
@@ -5405,16 +5406,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.13.0",
+            "version": "v4.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "50953a2691a922aa1769461637869a0a2faa3f53"
+                "reference": "63a79e8daa781cac14e5195e63ed8ae231dd10fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/50953a2691a922aa1769461637869a0a2faa3f53",
-                "reference": "50953a2691a922aa1769461637869a0a2faa3f53",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/63a79e8daa781cac14e5195e63ed8ae231dd10fd",
+                "reference": "63a79e8daa781cac14e5195e63ed8ae231dd10fd",
                 "shasum": ""
             },
             "require": {
@@ -5455,9 +5456,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.13.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.13.1"
             },
-            "time": "2021-09-20T12:20:58+00:00"
+            "time": "2021-11-03T20:52:16+00:00"
         },
         {
             "name": "orchestra/testbench",
