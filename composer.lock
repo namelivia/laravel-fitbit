@@ -824,21 +824,23 @@
         },
         {
             "name": "kamermans/guzzle-oauth2-subscriber",
-            "version": "v1.0.12",
+            "version": "v1.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kamermans/guzzle-oauth2-subscriber.git",
-                "reference": "e1f3a78155fb37410f0103ef57b51fbd4fafd806"
+                "reference": "10b5cf242c5167afd16f1c1f243ac5be689ecd4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kamermans/guzzle-oauth2-subscriber/zipball/e1f3a78155fb37410f0103ef57b51fbd4fafd806",
-                "reference": "e1f3a78155fb37410f0103ef57b51fbd4fafd806",
+                "url": "https://api.github.com/repos/kamermans/guzzle-oauth2-subscriber/zipball/10b5cf242c5167afd16f1c1f243ac5be689ecd4c",
+                "reference": "10b5cf242c5167afd16f1c1f243ac5be689ecd4c",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/guzzle": "~4.0|~5.0|~6.0|~7.0",
                 "php": ">=5.4.0"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "Guzzle ~4.0|~5.0|~6.0|~7.0"
             },
             "type": "library",
             "autoload": {
@@ -863,9 +865,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kamermans/guzzle-oauth2-subscriber/issues",
-                "source": "https://github.com/kamermans/guzzle-oauth2-subscriber/tree/v1.0.12"
+                "source": "https://github.com/kamermans/guzzle-oauth2-subscriber/tree/v1.0.13"
             },
-            "time": "2022-08-17T13:15:21+00:00"
+            "time": "2023-07-11T21:43:27+00:00"
         },
         {
             "name": "laravel/framework",
